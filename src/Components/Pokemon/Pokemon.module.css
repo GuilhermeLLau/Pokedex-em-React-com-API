@@ -1,0 +1,75 @@
+.pkmnCard {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+.pkmnCard:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 14px 26px 5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 14px 26px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 14px 26px 5px rgba(0,0,0,0.75);
+}
+.pkmnCard:hover img{
+  transform: scale(1.1);
+
+}
+
+
+.pkmnImg {
+  margin: 0 auto;
+}
+
+.pkmnImg img{
+  min-width: 200px;
+  margin: 0 10px;
+  transition: .2s ease-in-out;
+}
+
+
+
+.pkmnInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pkmnInformation {
+  padding: 15px;
+  margin-top: 1rem;
+  color:white;
+}
+
+.pkmnOrder {
+  font-size: 1.2rem;
+  line-height: 1rem;
+}
+
+.pkmnName {
+  text-transform: capitalize;
+  font-size: 2rem;
+  flex: 1;
+}
+
+.typesCard {
+  display: flex;
+  gap: 10px;
+}
+
+.typesCard span {
+  flex:1;
+  text-align: center;
+}
+
+.pkmnTypes {
+  display: flex;
+  max-width: 100px;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0.3rem;
+  margin-top: 5px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}

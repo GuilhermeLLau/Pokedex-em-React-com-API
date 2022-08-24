@@ -1,0 +1,33 @@
+.pagContainer{
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  align-items: center;
+  color: white;
+}
+
+.pagCard {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pagContainer h1 {
+  font-size: 3rem;
+}
+
+.pagContainer button {
+  padding: 8px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pagContainer button:hover {
+  color: yellow;
+  transition: .3s ease-in-out;
+}

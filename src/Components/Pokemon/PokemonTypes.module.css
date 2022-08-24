@@ -1,0 +1,134 @@
+.typeNormal {
+  background-image: linear-gradient(to right,#8e9eab,#d7d2cc);
+  color: black;
+}
+.typeNormalBack {
+  background-image: url(../../assets/types-bg/normal.jpeg);
+}
+
+.typeFire {
+  background-image: linear-gradient(to right,#f12711,#f5af19);
+  color: orange;
+}
+.typeFireBack {
+  background-image: url(../../assets/types-bg/fire.jpeg)
+}
+
+.typeWater {
+  background-image: linear-gradient(to right,#56CCF2,#2F80ED);
+  color: blue;
+}
+.typeWaterBack {
+  background-image: url(../../assets/types-bg/water.jpeg)
+}
+
+.typeGrass {
+  background-image: linear-gradient(to right,#DCE35B,#45B649);
+  color: green;
+}
+.typeGrassBack {
+  background-image: url(../../assets/types-bg/grass.jpeg)
+}
+
+.typeFlying {
+  background-image: linear-gradient(to right,#FFEFBA,#FFFFFF);
+  color: sandybrown;
+}
+.typeFlyingBack {
+  background-image: url(../../assets/types-bg/flying.jpeg)
+}
+
+.typeFighting {
+  background-image: linear-gradient(to right,#8E0E00,#BD3F32);
+  color: black;
+}
+.typeFightingBack {
+  background-image: url(../../assets/types-bg/fighting.jpeg)
+}
+
+.typePoison{
+  background-image: linear-gradient(to right,#ad5389,#3c1053);
+  color: plum;
+}
+.typePoisonBack {
+  background-image: url(../../assets/types-bg/poison.jpeg)
+}
+
+.typeElectric {
+  background-image: linear-gradient(to right,yellow,#ffa751);
+  color: darkslateblue;
+}
+.typeElectricBack {
+  background-image: url(../../assets/types-bg/electric.jpeg)
+}
+
+.typeGround {
+  background-image: linear-gradient(to right,#D1913C,#FFD194);
+  color: brown;
+}
+.typeGroundBack {
+  background-image: url(../../assets/types-bg/ground.jpeg)
+}
+.typeRock {
+  background-image: linear-gradient(to right,#603813,#b29f94);
+  color: black;
+}
+.typeRockBack {
+  background-image: url(../../assets/types-bg/rock.jpeg)
+}
+.typePsychic {
+  background-image: linear-gradient(to right,#f4c4f3,#fc67fa);
+  color: purple;
+}
+.typePsychicBack {
+  background-image: url(../../assets/types-bg/psychic.jpeg)
+}
+.typeIce {
+  background-image: linear-gradient(to right,#acb6e5,#86fde8);
+  color: whitesmoke;
+}
+.typeIceBack {
+  background-image: url(../../assets/types-bg/ice.jpeg)
+}
+.typeBug {
+  background-image: linear-gradient(to right,#76b852,#8DC26F);
+  color: #adff2f;
+}
+.typeBugBack {
+  background-image: url(../../assets/types-bg/bug.jpeg)
+}
+.typeGhost {
+  background-image: linear-gradient(to right,#20002c,#cbb4d4);
+  color: lightgrey;
+}
+.typeGhostBack {
+  background-image: url(../../assets/types-bg/ghost.jpeg)
+}
+.typeSteel {
+  background-image: linear-gradient(to right,#abbaab,#D7DDE8);
+  color: gray;
+}
+.typeSteelBack {
+  background-image: url(../../assets/types-bg/steel.jpeg)
+}
+.typeDragon {
+  background-image: linear-gradient(to right,#373B44,#4286f4);
+  color: lightblue;
+}
+.typeDragonBack {
+  background-image: url(../../assets/types-bg/dragon.jpeg)
+}
+.typeDark  {
+  background-image: linear-gradient(to right,#f12711,#f5af19);
+  color: orange;
+}
+.typeDarkBack {
+  background-image: url(../../assets/types-bg/dark.jpeg)
+}
+.typeFairy {
+  background-image: linear-gradient(to right,#f953c6,#b91d73);
+  color: pink;
+}
+.typeFairyBack {
+  background-image: url(../../assets/types-bg/fairy.jpeg)
+}

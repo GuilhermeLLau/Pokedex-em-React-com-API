@@ -1,0 +1,64 @@
+.searchContainer {
+  padding: 2rem 0 1rem 0;
+  color: white;
+  background-color: #3f4657;
+}
+
+.searchCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 403px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+  .pkmnSearchCard {
+    margin: 0.5rem auto;
+    max-width:320px;
+  }
+
+  .searchMenu {
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    margin: 1rem;
+  }
+  
+  .searchBar input {
+    width: 60%;
+    padding: 0.7rem;
+    border: none; 
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .searchBar button {
+    width: 25%;
+    color: white;
+    background-color: #35383F;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    transition: .3s ease-in-out;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+  }
+
+  .searchBar button:hover {
+    color: yellow;
+  }
+
+  .notFound {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+
+  .notFound img{
+    margin-top: 30px;
+  }

@@ -1,0 +1,7 @@
+.pkmnGrid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1rem;
+  max-width: 100%;
+  margin: 0 4%;
+}
