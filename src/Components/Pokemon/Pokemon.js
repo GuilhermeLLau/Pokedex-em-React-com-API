@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Pokemon.module.css';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { SearchColorTypes, SearchTypes } from './utils';
 
 const Pokemon = (props) => {
   const { pokemon } = props;
   return (
-    <Link to={`/${pokemon.name}`}>
+    <Link to={`/pokemon/${pokemon.id}`}>
       <div
         className={`${styles.pkmnCard} ${SearchTypes(
           pokemon.types[0].type.name,

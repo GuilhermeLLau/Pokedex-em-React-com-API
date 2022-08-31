@@ -1,0 +1,7 @@
+.Header {
+  padding: 1rem;
+}
+.Header h1 {
+  text-decoration: none;
+  color: #ccc;
+}
