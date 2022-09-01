@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <div className={styles.Header}>
-      <Link to="/Pokedex-em-React-com-API">
+      <Link to="/">
         <h1>Página Inicial</h1>
       </Link>
     </div>
