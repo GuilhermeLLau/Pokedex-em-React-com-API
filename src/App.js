@@ -8,9 +8,9 @@ import Home from './Components/Home/Home';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/Pokedex-em-React-com-API">
         <Header />
-        <Routes basename="/Pokedex-em-React-com-API">
+        <Routes>
           <Route exact path="/Pokedex-em-React-com-API" element={<Home />} />
           <Route path="/pokemon/:id" element={<PokemonDetails />} />
         </Routes>
