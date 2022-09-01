@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import PokemonDetails from './Components/PokemonDetails/PokemonDetails';
 import Home from './Components/Home/Home';
