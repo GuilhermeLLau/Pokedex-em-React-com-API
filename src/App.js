@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
+        <Routes basename="/Pokedex-em-React-com-API">
+          <Route exact path="/Pokedex-em-React-com-API" element={<Home />} />
           <Route path="/pokemon/:id" element={<PokemonDetails />} />
         </Routes>
       </Router>
