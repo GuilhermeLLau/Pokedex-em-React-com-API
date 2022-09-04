@@ -31,3 +31,12 @@
   color: yellow;
   transition: .3s ease-in-out;
 }
+
+@media (max-width: 600px) {
+  .pagContainer {
+    flex-direction: column;
+  }
+  .pagContainer h1 {
+    margin-bottom: rem;
+  }
+}

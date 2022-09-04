@@ -23,10 +23,11 @@ const Home = () => {
       });
       const results = await Promise.all(promises);
       setPkmnList(results);
-      setLoading(false);
     } catch (error) {
       setError(true);
       console.log('error');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -53,7 +54,7 @@ const Home = () => {
         NextClick={NextClick}
         pages={pages}
       ></Pagination>
-      <Pokedex pkmnList={pkmnList}></Pokedex>
+      <Pokedex pkmnList={pkmnList} loading={loading}></Pokedex>
     </div>
   );
 };

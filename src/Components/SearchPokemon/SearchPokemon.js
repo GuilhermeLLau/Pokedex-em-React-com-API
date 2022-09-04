@@ -32,12 +32,13 @@ const SearchPokemon = () => {
       console.log('error');
     }
   };
+
   return (
     <div className={styles.searchContainer}>
       <div className={styles.searchCard}>
         <div className={styles.searchMenu}>
           <h1>Procure o seu Pokemon Favorito !</h1>
-          <div className={styles.searchBar}>
+          <form className={styles.searchBar}>
             <input
               className={styles.InputPkmn}
               type="text"
@@ -47,7 +48,7 @@ const SearchPokemon = () => {
             <button className={styles.BtnPkmn} onClick={handleClick}>
               Buscar
             </button>
-          </div>
+          </form>
         </div>
         {notFound ? (
           <div className={styles.notFound}>

@@ -4,4 +4,28 @@
   grid-gap: 1rem;
   max-width: 100%;
   margin: 0 4%;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 1300px) {
+  .pkmnGrid {
+    grid-template-columns: repeat(3,1fr);
+  }
+} 
+@media (max-width: 767px) {
+  .pkmnGrid {
+    grid-template-columns: repeat(2,1fr);
+  }
+} 
+@media (max-width: 600px) {
+  .pkmnGrid {
+    grid-template-columns: 1fr;
+  }
+} 
+
+.Loading {
+  font-size: 2rem;
+  color: yellow;
+  margin: 0 auto;
+  height: 100vh;
 }

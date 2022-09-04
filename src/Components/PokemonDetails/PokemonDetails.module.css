@@ -116,3 +116,10 @@
 .PkmnStats progress {
   width: 100%;
 }
+
+.Loading {
+  font-size: 2rem;
+  color: yellow;
+  margin: 0 auto;
+  height: 100vh;
+}

@@ -5,6 +5,7 @@ import styles from './PokemonDetails.module.css';
 const PokemonDetails = () => {
   const { id } = useParams();
   const [url, setUrl] = React.useState('');
+  const [loading, setLoading] = React.useState(false);
   const [pkmn, setPkmn] = React.useState(null);
   React.useEffect(() => {
     PkmnDetails();
@@ -12,11 +13,17 @@ const PokemonDetails = () => {
   }, []);
 
   const PkmnDetails = async () => {
-    await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
-      .then((response) => response.json())
-      .then((response) => {
-        setPkmn(response);
-      });
+    try {
+      setLoading(true);
+      await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+        .then((response) => response.json())
+        .then((response) => {
+          setPkmn(response);
+        });
+      setLoading(false);
+    } catch (error) {
+      console.log('error');
+    }
   };
   const SearchUrl = () => {
     if (id.length === 1) {
@@ -27,9 +34,11 @@ const PokemonDetails = () => {
       setUrl('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/');
     }
   };
+  console.log(pkmn);
 
   return (
     <div className={styles.PkmnDetailsContainer}>
+      {loading && <div className={styles.Loading}>Loading...</div>}
       <div className={styles.PkmnDetailsGrid}>
         <div className={styles.PkmnDetailsFlex}>
           <div className={styles.PkmnDetailsInfo}>
@@ -42,7 +51,7 @@ const PokemonDetails = () => {
                 pkmn.types[0].type.name,
               )}`}
             >
-              <img src={`${url}${id}.png`} alt={id} />
+              <img src={`${url}${id}.png`} alt="não encontrado" />
             </div>
           )}
 
@@ -68,9 +77,9 @@ const PokemonDetails = () => {
         </div>
         {pkmn && (
           <div className={styles.PkmnStatsCard}>
-            {pkmn.stats.map((stats) => {
+            {pkmn.stats.map((stats, index) => {
               return (
-                <div className={styles.PkmnStats}>
+                <div key={index} className={styles.PkmnStats}>
                   <span className={styles.PkmnStatsName}>
                     {stats.stat.name}: {stats.base_stat}
                   </span>
