@@ -32,6 +32,7 @@ const SearchPokemon = () => {
       console.log('error');
     }
   };
+  //Teste
 
   return (
     <div className={styles.searchContainer}>

@@ -18,7 +18,7 @@ const Header = () => {
         >
           <AiOutlineLinkedin />
         </a>
-        <a href="https://https://github.com/GuilhermeLLau" target="_blank">
+        <a href="https://github.com/GuilhermeLLau" target="_blank">
           <BsGithub />
         </a>
       </nav>
